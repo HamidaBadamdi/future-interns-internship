@@ -12,7 +12,7 @@ This repository demonstrates my practical skills in frontend development, backen
 
 | # | Project | Description | Live Demo |
 |---|---|---|---|
-| 01 | **Personal Developer Portfolio** | A responsive portfolio showcasing my profile, skills, and projects. | [View Live ↗](https://software-developer-hamida-portfolio.netlify.app/) |
+| 01 | **Personal Developer Portfolio** | A responsive portfolio showcasing my profile, skills, and projects. | <a href="https://software-developer-hamida-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">View Live ↗</a> |
 | 02 | **Mini CRM – LeadFlow** | A lead management system with React, Node.js, Express, and MongoDB. | [View Live ↗](YOUR_TASK_2_NETLIFY_LINK) |
 | 03 | **Butter & Bloom** | A responsive multi-page bakery website with an elegant interface. | [View Live ↗](YOUR_TASK_3_NETLIFY_LINK) |
 
