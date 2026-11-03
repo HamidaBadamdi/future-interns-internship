@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hamida Badamdi — MCA student and software developer specializing in Java, backend development, APIs and databases.">
+    <title>Hamida Badamdi | Software Developer</title>
+
+    <meta name="description"
+      content="Explore Hamida Badamdi's software developer portfolio, featuring Java, backend development, REST APIs, web applications, and academic projects.">
+
+<meta name="author" content="Hamida Badamdi">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title"
+      content="Hamida Badamdi | Software Developer">
+
+<meta property="og:description"
+      content="Explore my software projects, technical skills, and development journey.">
+
+<meta property="og:type" content="website">
+<meta property="og:url"
+      content="https://hamida-portfolio.netlify.app/">
+
+<meta name="theme-color" content="#111111">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">HB<span>.DEVLOPER</span></a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-contact" href="#contact">Let's Talk <span>↗</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        OPEN TO OPPORTUNITIES
+                    </div>
+
+                    <p class="eyebrow">HELLO, I'M HAMIDA BADAMDI</p>
+
+                    <h1>
+                        Building digital<br>
+                        experiences that<br>
+                        <span class="highlight">make sense.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Final Year MCA student and aspiring software developer passionate
+                        about backend systems, clean code, and building useful
+                        applications that solve real-world problems.
+                    </p>
+
+                    <div class="hero-role">
+                        <span class="role-prefix">CURRENTLY EXPLORING //</span>
+                        <span id="typing-text">Backend Development</span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary-custom">
+                            Explore My Work <span>↗</span>
+                        </a>
+                        <a href="#contact" class="btn-outline-custom">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/HamidaBadamdi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/hamida-badamdi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:hamidabadamdi2915@gmail.com" aria-label="Email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <div class="window-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="file-label">developer.java</span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+
+                        <div class="code-content">
+                            <p><span class="line-number">01</span> <span class="code-purple">public class</span> <span class="code-yellow">Developer</span> {</p>
+                            <p><span class="line-number">02</span> &nbsp; <span class="code-purple">String</span> name = <span class="code-green">"Hamida"</span>;</p>
+                            <p><span class="line-number">03</span> &nbsp; <span class="code-purple">String</span> degree = <span class="code-green">"MCA"</span>;</p>
+                            <p><span class="line-number">04</span> &nbsp; <span class="code-purple">String</span> focus = <span class="code-green">"Backend"</span>;</p>
+                            <p><span class="line-number">05</span></p>
+                            <p><span class="line-number">06</span> &nbsp; <span class="code-purple">void</span> <span class="code-yellow">build</span>() {</p>
+                            <p><span class="line-number">07</span> &nbsp; &nbsp; learn();</p>
+                            <p><span class="line-number">08</span> &nbsp; &nbsp; solveProblems();</p>
+                            <p><span class="line-number">09</span> &nbsp; &nbsp; <span class="code-purple">return</span> <span class="code-green">"Keep Growing"</span>;</p>
+                            <p><span class="line-number">10</span> &nbsp; }</p>
+                            <p><span class="line-number">11</span> }</p>
+                        </div>
+
+                        <div class="code-card-footer">
+                            <span><i class="fa-solid fa-code"></i> Java</span>
+                            <span><i class="fa-solid fa-circle-check"></i> Ready to build</span>
+                        </div>
+
+                        <div class="floating-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <div>
+                                <strong>9.88 / 10</strong>
+                                <small>Current MCA CGPA</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>BASED IN JAMNAGAR, INDIA</span>
+                <a href="#about">SCROLL TO EXPLORE <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <h2>A little about <span>me.</span></h2>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <p class="about-lead">
+                        I enjoy turning ideas into applications — one logical
+                        step at a time.
+                    </p>
+
+                    <p class="body-copy">
+                        I'm a final-year Master of Computer Applications student
+                        at Marwadi University with a strong academic foundation
+                        and a genuine interest in software development.
+                    </p>
+
+                    <p class="body-copy">
+                        My experience includes building Android applications,
+                        REST API integrations, database-driven systems, and
+                        full-stack web projects. I enjoy understanding how
+                        things work behind the scenes, writing maintainable
+                        code, and learning from practical challenges.
+                    </p>
+
+                    <p class="body-copy">
+                        My goal is to work with experienced developers, contribute
+                        to meaningful software projects, and grow into a strong
+                        backend software engineer.
+                    </p>
+
+                    <a href="https://hamida-portfolio.netlify.app" target="_blank"
+                       rel="noopener noreferrer" class="text-link">
+                        Visit my original portfolio <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">9.88</span>
+                            <span class="stat-label">MCA CGPA / 10</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10.0</span>
+                            <span class="stat-label">MCA Semester 1 CGPA</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">03+</span>
+                            <span class="stat-label">Development Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">01</span>
+                            <span class="stat-label">Goal: Keep Improving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-padding skills-section">
+        <div class="container">
+            <div class="section-heading">
+               <h3 class="section-index">SKILLS</h3> 
+                <h2>Tools of <span>the trade.</span></h2>
+                <p>The technologies I use and continue to explore.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span>Java</span><span>C#</span><span>C++</span>
+                            <span>JavaScript</span><span>Python</span><span>Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>REST APIs</span><span>Node.js</span>
+                            <span>Express.js</span><span>ASP.NET</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span>MySQL</span><span>MongoDB</span>
+                            <span>SQL Server</span><span>Oracle SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Frontend & Tools</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                            <span>React</span><span>Git</span><span>Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-index">SELECTED WORK</span>
+                <h2>Things I've <span>built.</span></h2>
+                <p>Practical projects created to solve real problems and strengthen my development skills.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-visual project-visual-green">
+                            <span class="project-number">PROJECT 01</span>
+                            <i class="fa-solid fa-book-open project-main-icon"></i>
+                            <span class="visual-label">DIGITAL CREDIT MANAGEMENT</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span>ANDROID · JAVA · MYSQL</span>
+                                <span class="project-status">COMPLETED</span>
+                            </div>
+                            <h3>ApnaKhata</h3>
+                            <p>
+                                A digital credit management application for
+                                small businesses to track customer balances,
+                                manage transactions, and share payment reminders.
+                            </p>
+                            <div class="tech-list">
+                                <span>Java</span><span>Retrofit</span>
+                                <span>PHP REST API</span><span>MySQL</span>
+                            </div>
+                            <a href="https://github.com/HamidaBadamdi/apna-khata-app"
+                               target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Source Code <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-visual project-visual-blue">
+                            <span class="project-number">PROJECT 02</span>
+                            <i class="fa-solid fa-qrcode project-main-icon"></i>
+                            <span class="visual-label">SMART POS & QR ORDERING</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span>FULL STACK · MERN</span>
+                                <span class="project-status">IN DEVELOPMENT</span>
+                            </div>
+                            <h3>CanteenCart</h3>
+                            <p>
+                                A canteen ordering system with QR-based menu access,
+                                cart management, and an admin dashboard for managing
+                                products and order status.
+                            </p>
+                            <div class="tech-list">
+                                <span>React</span><span>Node.js</span>
+                                <span>Express</span><span>MongoDB</span>
+                            </div>
+                            <a href="https://github.com/HamidaBadamdi"
+                               target="_blank" rel="noopener noreferrer" class="project-link">
+                                Explore GitHub <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-visual project-visual-purple">
+                            <span class="project-number">PROJECT 03</span>
+                            <i class="fa-solid fa-comments project-main-icon"></i>
+                            <span class="visual-label">REAL-TIME LAN CHAT SYSTEM</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span>ASP.NET · SQL SERVER</span>
+                                <span class="project-status">COMPLETED</span>
+                            </div>
+                            <h3>ChatterBot</h3>
+                            <p>
+                                A LAN-based web chat system built with ASP.NET
+                                and SQL Server, adapted from a desktop chat
+                                application for browser-based access.
+                            </p>
+                            <div class="tech-list">
+                                <span>C#</span><span>ASP.NET</span>
+                                <span>SQL Server</span><span>IIS</span>
+                            </div>
+                            <a href="https://github.com/HamidaBadamdi/ChatterBot-Web-Chat-System"
+                               target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Source Code <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-6">
+                    <article class="project-card">
+                        <div class="project-visual project-visual-orange">
+                            <span class="project-number">PROJECT 04</span>
+                            <i class="fa-solid fa-building project-main-icon"></i>
+                            <span class="visual-label">DATABASE-DRIVEN DISCOVERY</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span>DATABASE · PL/SQL</span>
+                                <span class="project-status">COMPLETED</span>
+                            </div>
+                            <h3>Hostel & PG Discovery</h3>
+                            <p>
+                                A database-focused backend for discovering hostels
+                                and PG accommodations with facility filters,
+                                availability information, and database logic.
+                            </p>
+                            <div class="tech-list">
+                                <span>Oracle SQL</span><span>PL/SQL</span>
+                                <span>Procedures</span><span>Triggers</span>
+                            </div>
+                            <a href="https://github.com/HamidaBadamdi/hostel-pg-discovery-backend"
+                               target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Source Code <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="github-cta">
+                <p>Interested in the code behind my projects?</p>
+                <a href="https://github.com/HamidaBadamdi"
+                   target="_blank" rel="noopener noreferrer" class="btn-outline-custom">
+                    More on GitHub <span>↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-padding education-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-index">EDUCATION</span>
+                <h2>Learning is <span>the foundation.</span></h2>
+            </div>
+
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="timeline-marker"></div>
+                    <div class="education-year">2025 — 2027</div>
+                    <div class="education-details">
+                        <span class="education-level">POSTGRADUATE</span>
+                        <h3>Master of Computer Applications</h3>
+                        <p>Marwadi University, Rajkot</p>
+                        <div class="education-result">
+                            <strong>9.88 / 10 CGPA</strong>
+                            <span>Semester 1: 10.0 CGPA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="timeline-marker"></div>
+                    <div class="education-year">2022 — 2025</div>
+                    <div class="education-details">
+                        <span class="education-level">UNDERGRADUATE</span>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <p>Bhavan's H.J. Doshi College, Jamnagar</p>
+                        <div class="education-result">
+                            <strong>9.06 / 10 CGPA</strong>
+                            <span>Academic rank holder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+
+    <!-- Contact -->
+<section id="contact" class="section-padding contact-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-index">CONTACT</span>
+            <h2>Let's build something<br><span>meaningful.</span></h2>
+            <p>
+                Have an opportunity, a project idea, or just want to connect?
+                I'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-layout">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>
+                    I'm looking forward to internship opportunities,
+                    collaborative projects, and connecting with fellow developers.
+                </p>
+
+                <div class="contact-details">
+                    <a href="mailto:hamidabadamdi2915@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>
+                            <small>Email me at</small>
+                            hamidabadamdi2915@gmail.com
+                        </span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/hamida-badamdi"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>
+                            <small>Connect professionally</small>
+                            LinkedIn
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/HamidaBadamdi"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        <span>
+                            <small>Explore my projects</small>
+                            GitHub
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-box">
+                <h3>Send Me a Message</h3>
+                <p>Fill in the details below and let's start a conversation.</p>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <label for="from_name">Your Name</label>
+                        <input type="text" id="from_name" name="from_name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="from_email">Email Address</label>
+                        <input type="email" id="from_email" name="from_email"
+                               placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject"
+                               placeholder="What would you like to discuss?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5"
+                                  placeholder="Write your message here..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">
+                        Send Message <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+
+    <!--<section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <span class="section-index">CONTACT</span>
+                <h2>Have a good project<br>in <span>mind?</span></h2>
+                <p>
+                    I'm looking forward to internship opportunities,
+                    collaborative projects, and connecting with fellow developers.
+                </p>
+
+                <a href="mailto:hamidabadamdi2915@gmail.com" class="btn-primary-custom">
+                    Let's Connect <span>↗</span>
+                </a>
+
+                <div class="contact-details">
+                    <a href="mailto:hamidabadamdi2915@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                        hamidabadamdi2915@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/hamida-badamdi"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/HamidaBadamdi"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+    <footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a class="footer-logo" href="#home">
+                    Hamida Badamdi<span>.</span>
+                </a>
+                <p class="footer-role">SOFTWARE DEVELOPER</p>
+                <p class="footer-description">
+                    Building meaningful digital experiences through code,
+                    creativity, and continuous learning.
+                </p>
+            </div>
+
+            <div class="footer-navigation">
+                <span class="footer-heading">QUICK LINKS</span>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-connect">
+                <span class="footer-heading">LET'S CONNECT</span>
+                <p>Have an opportunity or idea? Let's talk.</p>
+
+                <a href="mailto:hamidabadamdi2915@gmail.com" class="footer-email">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email Me <span>↗</span>
+                </a>
+
+                <div class="footer-socials">
+                    <a href="https://github.com/HamidaBadamdi"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/hamida-badamdi"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Hamida Badamdi. All rights reserved.</p>
+
+            <a href="#home" class="back-to-top">
+                BACK TO TOP <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+            <!--<p class="footer-made">Made with <span>♥</span> and code.</p>-->
+            <p class="footer-made">Designed & Developed by <span>Hamida Badamdi</span></p>
+        </div>
+
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
