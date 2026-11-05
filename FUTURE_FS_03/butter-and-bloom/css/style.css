@@ -1,0 +1,1356 @@
+
+/* ========================================
+   BUTTER & BLOOM
+   Fictional Bakery Website
+   Theme: Butter Cream, Berry & Espresso
+======================================== */
+
+:root {
+    --butter: #f6e8c9;
+    --berry: #8e2938;
+    --berry-dark: #70202d;
+    --cream: #fffdf7;
+    --espresso: #29251f;
+    --muted: #756d62;
+    --line: #e6d9bf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: var(--cream);
+    color: var(--espresso);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4,
+.bakery-brand {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/* ========================================
+   DEMO NOTICE
+======================================== */
+
+.demo-notice {
+    padding: 7px 15px;
+    background: var(--berry);
+    color: white;
+    text-align: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.bakery-navbar {
+    background: var(--cream);
+    padding: 19px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.bakery-brand {
+    display: inline-flex;
+    flex-direction: column;
+    color: var(--espresso) !important;
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.bakery-brand span {
+    display: inline;
+    color: var(--berry);
+}
+
+.bakery-brand small {
+    margin-top: 8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.bakery-navbar .nav-link {
+    color: var(--espresso);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.bakery-navbar .nav-link:hover,
+.bakery-navbar .nav-link.active {
+    color: var(--berry);
+}
+
+.navbar-toggler {
+    border-color: var(--line);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(142, 41, 56, 0.12);
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn-berry {
+    background: var(--berry);
+    border: 1px solid var(--berry);
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px 21px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-berry:hover {
+    background: var(--berry-dark);
+    border-color: var(--berry-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline-berry {
+    background: transparent;
+    border: 1px solid var(--berry);
+    color: var(--berry);
+    border-radius: 3px;
+    padding: 12px 21px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-berry:hover {
+    background: var(--berry);
+    color: white;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 110px;
+    background:
+        radial-gradient(
+            circle at 8% 12%,
+            rgba(255, 255, 255, 0.8),
+            transparent 28%
+        ),
+        var(--butter);
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 23px;
+    color: var(--berry);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.eyebrow span {
+    font-size: 1.15rem;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+    font-size: clamp(4rem, 7vw, 6.7rem);
+    font-weight: 600;
+    letter-spacing: -3px;
+    line-height: 0.98;
+}
+
+.hero h1 span {
+    color: var(--berry);
+    font-style: italic;
+}
+
+.hero-text {
+    max-width: 465px;
+    color: #655b4e;
+    font-size: 1.02rem;
+    line-height: 1.9;
+}
+
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 35px;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.note-star {
+    color: var(--berry);
+    font-size: 1.4rem;
+}
+
+/* Hero image composition */
+
+.hero-image-wrap {
+    position: relative;
+    padding: 20px 15px 35px 20px;
+}
+
+.hero-image-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 85%;
+    background: var(--berry);
+    opacity: 0.12;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 48% 48% 3px 3px;
+}
+
+.floating-note {
+    position: absolute;
+    z-index: 2;
+    left: -15px;
+    bottom: 65px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px 20px;
+    background: var(--cream);
+    color: var(--espresso);
+    box-shadow: 0 8px 30px rgba(41, 37, 31, 0.08);
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.floating-flower {
+    color: var(--berry);
+    font-size: 2rem;
+}
+
+.image-caption {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 4px;
+    color: var(--berry);
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* ========================================
+   CATEGORY STRIP
+======================================== */
+
+.category-strip {
+    padding: 28px 0 20px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+}
+
+.category-strip .col-6 {
+    border-right: 1px solid var(--line);
+}
+
+.category-strip .col-6:nth-child(2n) {
+    border-right: none;
+}
+
+.category-symbol {
+    font-size: 1.65rem;
+}
+
+.category-strip p {
+    margin: 8px 0 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+}
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 15px;
+}
+
+.section-heading h2,
+.story-heading {
+    font-size: clamp(2.6rem, 4vw, 4rem);
+    font-weight: 600;
+    letter-spacing: -1.4px;
+    line-height: 1.17;
+}
+
+.section-heading h2 span,
+.story-heading span {
+    color: var(--berry);
+    font-style: italic;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--berry);
+    color: var(--berry);
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ========================================
+   FEATURED PRODUCTS
+======================================== */
+
+.featured-section {
+    background: var(--cream);
+}
+
+.product-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #eee6d9;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(41, 37, 31, 0.09);
+}
+
+.product-image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image-wrap img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.product-card:hover .product-image-wrap img {
+    transform: scale(1.045);
+}
+
+.product-tag {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    padding: 7px 10px;
+    background: var(--butter);
+    color: var(--berry);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.product-info {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 23px 20px;
+}
+
+.product-info h3 {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.product-info p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.83rem;
+    line-height: 1.7;
+}
+
+.product-price {
+    flex-shrink: 0;
+    color: var(--berry);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.sample-price-note {
+    margin: 23px 0 0;
+    color: var(--muted);
+    font-size: 0.76rem;
+}
+
+/* ========================================
+   STORY SECTION
+======================================== */
+
+.story-section {
+    background: var(--butter);
+}
+
+.story-image-wrap {
+    position: relative;
+    padding: 0 20px 20px 0;
+}
+
+.story-image-wrap img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.story-sticker {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: var(--berry);
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5;
+    transform: rotate(9deg);
+}
+
+.story-heading {
+    margin-bottom: 24px;
+}
+
+.story-text {
+    max-width: 490px;
+    color: #655b4e;
+    font-size: 0.96rem;
+    line-height: 1.9;
+}
+
+/* ========================================
+   CLOSING SECTION
+======================================== */
+
+.closing-section {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+    background: #f1d7b6;
+}
+
+.closing-section .eyebrow {
+    justify-content: center;
+}
+
+.closing-section h2 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+.closing-section h2 span {
+    color: var(--berry);
+    font-style: italic;
+}
+
+.closing-section p:not(.eyebrow) {
+    max-width: 470px;
+    margin: 20px auto;
+    color: #655b4e;
+}
+
+.closing-flower {
+    position: absolute;
+    color: var(--berry);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.flower-one {
+    top: 25px;
+    left: 9%;
+    font-size: 5rem;
+    transform: rotate(-15deg);
+}
+
+.flower-two {
+    right: 9%;
+    bottom: 25px;
+    font-size: 6rem;
+    transform: rotate(20deg);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.bakery-footer {
+    padding: 60px 0 20px;
+    background: var(--espresso);
+    color: var(--cream);
+}
+
+.bakery-footer .bakery-brand {
+    color: var(--cream) !important;
+}
+
+.bakery-footer .bakery-brand span {
+    color: #eaa3a8;
+}
+
+.bakery-footer .bakery-brand small {
+    color: #d4c4a9;
+}
+
+.footer-description {
+    max-width: 350px;
+    margin-top: 22px;
+    color: #c0b7a9;
+    font-size: 0.86rem;
+}
+
+.bakery-footer h3 {
+    margin-bottom: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.bakery-footer .col-md-3 > a {
+    display: block;
+    margin-bottom: 10px;
+    color: #c0b7a9;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+
+.bakery-footer .col-md-3 > a:hover {
+    color: #f2c1a7;
+}
+
+.footer-small {
+    color: #c0b7a9;
+    font-size: 0.82rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #494239;
+    color: #c0b7a9;
+    font-size: 0.75rem;
+}
+
+
+/* ==============================
+   MENU PAGE
+============================== */
+
+.menu-hero {
+    background: var(--butter, #F6E8C9);
+    padding: 85px 20px 75px;
+}
+
+.menu-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    line-height: 1.12;
+    margin: 20px 0;
+    color: var(--espresso, #29251F);
+}
+
+.menu-hero h1 em,
+.menu-cta h2 em {
+    color: var(--berry, #8E2938);
+    font-weight: 500;
+}
+
+.menu-hero p {
+    max-width: 570px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #62574B;
+}
+
+.menu-note {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 16px;
+    border: 1px solid rgba(142, 41, 56, 0.2);
+    border-radius: 30px;
+    font-size: 0.85rem;
+    color: var(--berry, #8E2938);
+}
+
+.menu-filters {
+    gap: 10px;
+}
+
+.filter-btn {
+    background: transparent;
+    color: var(--espresso, #29251F);
+    border: 1px solid #ded4c4;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--berry, #8E2938);
+    border-color: var(--berry, #8E2938);
+    color: #fffdf7;
+}
+
+.menu-product {
+    transition: opacity 0.25s ease;
+}
+
+.product-card {
+    background: #fffdf7;
+    border: 1px solid #eee7db;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(41, 37, 31, 0.09);
+}
+
+.product-image-wrap {
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+    background: #f1e8da;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #fffdf7;
+    color: var(--berry, #8E2938);
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.product-info {
+    padding: 23px;
+}
+
+.product-category {
+    display: block;
+    color: var(--berry, #8E2938);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.product-price {
+    color: var(--berry, #8E2938);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.product-info p {
+    margin: 13px 0 0;
+    color: #756c61;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.menu-cta {
+    background: #f3e4dc;
+    padding: 75px 20px;
+}
+
+.menu-cta h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.3rem, 5vw, 3.8rem);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.menu-cta p {
+    color: #62574b;
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   ABOUT / OUR STORY PAGE
+============================== */
+
+.story-hero {
+    padding: 85px 0;
+    background: #fffdf7;
+    overflow: hidden;
+}
+
+.story-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    line-height: 1.14;
+    margin: 22px 0;
+    color: var(--espresso, #29251F);
+}
+
+.story-hero h1 em,
+.story-closing h2 em {
+    color: var(--berry, #8E2938);
+    font-weight: 500;
+}
+
+.story-hero-text {
+    max-width: 520px;
+    line-height: 1.9;
+    color: #756c61;
+    margin-bottom: 28px;
+}
+
+.story-image-frame {
+    position: relative;
+    padding: 0 0 28px 28px;
+}
+
+.story-image-frame::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    width: 65%;
+    height: 65%;
+    background: var(--butter, #F6E8C9);
+    border-radius: 45% 45% 12px 12px;
+    z-index: 0;
+}
+
+.story-hero-image {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 180px 180px 12px 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.story-image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: #fffdf7;
+    color: var(--berry, #8E2938);
+    padding: 15px 18px;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(41, 37, 31, 0.08);
+    font-size: 0.85rem;
+}
+
+.story-image-caption i {
+    margin-right: 7px;
+}
+
+.story-beginning {
+    background: var(--butter, #F6E8C9);
+}
+
+.story-paragraph {
+    color: #62574b;
+    line-height: 2;
+    margin-top: 22px;
+}
+
+.story-signature {
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-style: italic;
+    color: var(--berry, #8E2938);
+    margin-top: 30px;
+}
+
+.philosophy-section {
+    background: #fffdf7;
+}
+
+.philosophy-card {
+    position: relative;
+    background: #faf4e9;
+    padding: 35px 28px;
+    border-radius: 12px;
+    border: 1px solid #eee4d5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(41, 37, 31, 0.07);
+}
+
+.philosophy-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--butter, #F6E8C9);
+    color: var(--berry, #8E2938);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 28px;
+}
+
+.philosophy-number {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #c7b9a6;
+}
+
+.philosophy-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+}
+
+.philosophy-card p {
+    color: #756c61;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.story-closing {
+    padding: 80px 0;
+    background: #f3e4dc;
+}
+
+.story-closing h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.story-closing p {
+    color: #62574b;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 25px;
+}
+
+.story-closing-image {
+    width: 100%;
+    max-width: 390px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 48% 48% 12px 12px;
+}
+
+/* ==============================
+   CONTACT PAGE
+============================== */
+
+.contact-hero {
+    background: var(--butter, #F6E8C9);
+    padding: 75px 20px;
+}
+
+.contact-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.6rem, 6vw, 4.5rem);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.contact-hero h1 em {
+    color: var(--berry, #8E2938);
+    font-weight: 500;
+}
+
+.contact-hero p {
+    max-width: 580px;
+    margin: 0 auto;
+    color: #62574b;
+    line-height: 1.8;
+}
+
+.contact-section {
+    background: #fffdf7;
+}
+
+.contact-intro h2,
+.contact-form-card h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.9rem, 3vw, 2.6rem);
+    line-height: 1.25;
+    margin: 18px 0;
+}
+
+.contact-intro > p,
+.form-description {
+    color: #756c61;
+    line-height: 1.8;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 27px;
+}
+
+.contact-detail-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--butter, #F6E8C9);
+    color: var(--berry, #8E2938);
+    font-size: 1.25rem;
+}
+
+.contact-detail h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.15rem;
+    margin: 3px 0 7px;
+}
+
+.contact-detail p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #756c61;
+    margin: 0;
+}
+
+.contact-image-wrap {
+    position: relative;
+    margin-top: 35px;
+}
+
+.contact-image-wrap img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contact-image-caption {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 13px 16px;
+    background: rgba(255, 253, 247, 0.94);
+    border-radius: 8px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: var(--espresso, #29251F);
+}
+
+.contact-form-card {
+    background: #faf4e9;
+    border: 1px solid #eee4d5;
+    border-radius: 16px;
+    padding: clamp(22px, 4vw, 42px);
+}
+
+.contact-form-card h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form-card .form-label {
+    color: var(--espresso, #29251F);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+    border: 1px solid #e2d7c6;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background-color: #fffdf7;
+    color: var(--espresso, #29251F);
+}
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+    border-color: var(--berry, #8E2938);
+    box-shadow: 0 0 0 0.2rem rgba(142, 41, 56, 0.12);
+}
+
+.contact-form-card textarea {
+    resize: vertical;
+}
+
+.contact-submit {
+    width: 100%;
+    padding: 14px 20px;
+}
+
+.privacy-note {
+    margin: 20px 0 0;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: #756c61;
+}
+
+.privacy-note i {
+    margin-right: 5px;
+}
+
+#successAlert {
+    line-height: 1.7;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.contact-closing {
+    background: #f3e4dc;
+    padding: 65px 20px;
+}
+
+.closing-flower {
+    color: var(--berry, #8E2938);
+    font-size: 2rem;
+}
+
+.contact-closing h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin: 18px 0 12px;
+}
+
+.contact-closing p {
+    color: #62574b;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+    .contact-hero {
+        padding: 55px 18px;
+    }
+
+    .contact-form-card {
+        padding: 24px 18px;
+    }
+
+    .contact-image-wrap img {
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .story-hero {
+        padding: 60px 0;
+    }
+
+    .story-hero-image {
+        height: 360px;
+    }
+
+    .story-image-frame {
+        padding-left: 15px;
+    }
+
+    .story-image-caption {
+        max-width: 90%;
+        font-size: 0.78rem;
+    }
+
+    .story-closing {
+        padding: 60px 0;
+    }
+
+    .story-closing-image {
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .menu-hero {
+        padding: 60px 18px;
+    }
+
+    .menu-note {
+        border-radius: 12px;
+        line-height: 1.6;
+    }
+
+    .product-image-wrap {
+        height: 220px;
+    }
+
+    .product-info {
+        padding: 18px;
+    }
+
+    .filter-btn {
+        padding: 9px 16px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (min-width: 576px) {
+    .category-strip .col-6:nth-child(2n) {
+        border-right: 1px solid var(--line);
+    }
+
+    .category-strip .col-6:last-child {
+        border-right: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    .hero {
+        padding: 70px 0 85px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.7rem, 9vw, 5.4rem);
+    }
+
+    .hero-image-wrap {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-image {
+        height: 420px;
+    }
+
+    .section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .product-image-wrap img {
+        height: 260px;
+    }
+
+    .story-image-wrap img {
+        height: 380px;
+    }
+
+    .bakery-navbar .navbar-collapse {
+        padding-top: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .demo-notice {
+        font-size: 0.65rem;
+    }
+
+    .section-padding {
+        padding: 58px 0;
+    }
+
+    .bakery-brand {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        padding: 55px 0 65px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.5rem, 15vw, 4.5rem);
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 0.93rem;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+
+    .hero-image-wrap {
+        padding: 10px 7px 30px;
+    }
+
+    .hero-image {
+        height: 340px;
+    }
+
+    .floating-note {
+        left: -3px;
+        bottom: 48px;
+        padding: 12px;
+        font-size: 0.87rem;
+    }
+
+    .image-caption {
+        font-size: 0.55rem;
+    }
+
+    .category-strip {
+        padding: 24px 0 15px;
+    }
+
+    .category-strip .col-6:nth-child(2n) {
+        border-right: none;
+    }
+
+    .category-strip p {
+        font-size: 0.88rem;
+    }
+
+    .section-heading h2,
+    .story-heading {
+        font-size: 2.65rem;
+    }
+
+    .text-link {
+        font-size: 0.82rem;
+    }
+
+    .product-image-wrap img {
+        height: 270px;
+    }
+
+    .product-info {
+        padding: 18px 15px;
+    }
+
+    .product-info h3 {
+        font-size: 1.15rem;
+    }
+
+    .story-image-wrap img {
+        height: 320px;
+    }
+
+    .story-sticker {
+        width: 100px;
+        height: 100px;
+        font-size: 0.78rem;
+    }
+
+    .closing-section {
+        padding: 65px 0;
+    }
+
+    .closing-section h2 {
+        font-size: 3.2rem;
+    }
+
+    .flower-one {
+        left: -20px;
+        font-size: 3.5rem;
+    }
+
+    .flower-two {
+        right: -15px;
+        font-size: 4rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
